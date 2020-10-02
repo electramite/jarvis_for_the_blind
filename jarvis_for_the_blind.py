@@ -42,7 +42,7 @@ def sendEmail(to, msg):# this function used to send email to the reciever
     server.ehlo()
     server.starttls()
     server.login('sender@gmail.com', 'password') # sender's email
-    server.sendmail('electramite@gmail.com', to, msg)
+    server.sendmail('sender@gmail.com', to, msg)
     server.close()
 
 GPIO.setmode(GPIO.BOARD) # we are using board configuration (physical configuration)
